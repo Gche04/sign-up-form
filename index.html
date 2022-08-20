@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign-up</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div>
+        <div class="background">
+            <div>
+                <img src="./images/symb.png" alt="art gche logo" width="150" height="100">
+                <div>GCHE</div>
+            </div>
+        </div>
+    
+        <div>
+            <div class="info">
+                This will soon get real! You can feel in it your deepest dreams.
+                <br>Sign up <em>now</em> to get started.</br>
+                <p>You <em>know</em> you have to</p>
+            </div>
+            
+            <div id="form">
+                <legend>Lets go!</legend>
+                <form action="" method="post">
+                    <div class="sections">
+                        <div>
+                            <label for="first_name">First Name</label>
+                            <input required type="text" id="first_name" name="first_name" placeholder="mark">
+                        </div>
+                        <div>
+                            <label for="last_name">Last Name</label>
+                            <input required type="text" id="last_name" name="last_name" placeholder="joe">
+                        </div>
+                    </div>
+            
+                    <div class="sections">
+                        <div>
+                            <label for="email">E-mail</label>
+                            <input required type="email" name="email" id="email" placeholder="jess@email.com">
+                        </div>
+                        <div>
+                            <label for="phone_number">Mobile</label>
+                            <input required type="tel" name="phone_number" id="phone_number" placeholder="234xxxxxxxxxx">
+                        </div>
+                    </div>
+            
+                    <div class="sections">
+                        <div>
+                            <label for="password">Password</label>
+                            <input required type="password" name="password" id="password" placeholder=" ">
+                        </div>
+                        <div>
+                            <label for="confirm_password">Confirm Password</label>
+                            <input required type="password" name="confirm_password" id="confirm_password" placeholder=" ">
+                        </div>
+                    </div>
+                    <div id="password_info"></div>
+                </div>
+            
+                <button type="submit">CREATE ACCOUNT</button>
+            </form>
+            <div class="final_text">Already have an account? <a href="">log in</a></div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

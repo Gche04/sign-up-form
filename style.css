@@ -1,0 +1,140 @@
+
+@font-face{
+    font-family: myFont;
+    src: url(./fonts/Norse-Bold.otf);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+body > div{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.background{
+    background-image: url(./images/final-0351.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.background > div{
+    background-color: rgba(154, 168, 132, 0.178);
+    font-family: myFont, Lucida Sans, Lucida Sans Regular, Lucida Grande, Lucida Sans Unicode, Geneva, Verdana;
+    font-size: 5rem;
+    display: flex;
+    margin-top: 100px;
+    top: 1px;
+    position: sticky;
+}
+
+img + div{
+    margin-top: 10px;
+    position: relative;
+    right: 30px;
+}
+
+.info, legend, .final_text, .sections, button, #password_info{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(0, 0, 0, 0.637);
+
+}
+
+.info{
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+}
+
+.background + div{
+    background-color: rgb(246, 248, 242);
+    padding-top: 100px;
+}
+
+#form{
+    margin: 0px;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.212) 0px 3px 3px 0px;
+}
+
+legend{
+    font-weight: bold;
+}
+
+.sections{
+    display: flex;
+    gap: 50px;
+    font-size: small;
+    margin-top: 20px;
+}
+
+input{
+    border-radius: 2px;
+    border-style: solid;
+}
+
+input:focus, input:valid{
+    outline: 1px solid skyblue;
+}
+
+label{
+    display: block;
+}
+
+button{
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: rgb(209, 231, 183);
+    font-size: 0.5rem;
+}
+
+.final_text{
+    margin-left: 20px;
+    margin-bottom: 30px;
+    font-size: small;
+}
+
+a{
+    color: rgb(69, 75, 62);
+    text-decoration: none;
+}
+
+#password_info{
+    color: orangered;
+    font-size: x-small;
+}
+
+@media (max-width: 800px){
+    body > div, .sections{
+        flex-direction: column;
+    }
+    .background > div{
+        margin-top: 20px;
+    }
+    .sections{
+        justify-content: center;
+        gap: 10px;
+    }
+    input{
+        width: 100%;
+    }
+    .background + div{
+        padding-top: 20px;
+    }
+
+    .background{
+        height: 20%;
+    }
+}
